@@ -1,0 +1,30 @@
+{
+	"name": "myNewApp",
+	"title": "myNewApp",
+	"description": "myNewApp",
+	"version": "1.0.0",
+	"author": {
+		"name": "Albert Leśnikowski",
+		"email": "pan@albercik.net"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/albercik/angularjs-springmvc-seed.git"
+	},
+	"dependencies": {
+		"grunt": "latest",
+		"grunt-contrib-watch": "latest",
+		"grunt-contrib-clean": "latest",
+		"grunt-contrib-less": "latest",
+		"grunt-contrib-cssmin": "latest",
+		"grunt-contrib-uglify": "latest",
+		"grunt-processhtml": "latest",
+		"grunt-contrib-htmlmin": "latest",
+		"grunt-contrib-copy": "latest",
+		"grunt-contrib-jshint": "latest",
+
+		"grunt-karma": "latest",
+		"karma-jasmine": "latest",
+		"karma-phantomjs-launcher": "latest"
+	}
+}

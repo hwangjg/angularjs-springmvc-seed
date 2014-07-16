@@ -1,0 +1,19 @@
+<div class="col-md-4">
+	<form name="detailForm" role="form" class="form-horizontal">
+		<fieldset>
+			<div class="control-group">
+				<label class="control-label" for="firstname">Name</label>
+				<input type="text" class="form-control" id="firstname" data-ng-model="user.name" placeholder="Enter name" required>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="age">Age</label>
+				<input type="text" class="form-control" id="age" name="age" data-ng-model="user.age" placeholder="Enter age" required>
+			</div>
+			<br />
+			<button data-ng-click="saveOrUpdate()" data-ng-disabled="detailForm.$invalid" class="btn btn-primary">Save</button>
+		</fieldset>
+	</form>
+	<br />
+	<button data-ng-click="backToUserList()" class="btn btn-default">Back</button>
+</div>

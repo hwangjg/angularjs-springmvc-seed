@@ -1,0 +1,27 @@
+<div class="panel-body" data-ng-controller="UserListController">
+	<div class="panel panel-default">
+		<div class="panel-heading">Users</div>
+		<table class="table">
+			<thead>
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Action</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr data-ng-repeat="user in users">
+					<td>{{ user.id }} </td>
+					<td>{{ user.name | SimpleFilter }} </td>
+					<td>{{ user.age }} </td>
+					<td>
+						<button type="button" class="btn btn-success" data-ng-click="editUser(user.id)">Edit</button>
+						<button type="button" class="btn btn-danger" data-ng-click="deleteUser(user.id)">Delete</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<button type="button" class="btn btn-primary" data-ng-click="newUser()">Add new user</button>
+</div>
